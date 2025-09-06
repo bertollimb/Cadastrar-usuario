@@ -9,7 +9,7 @@ def cadastrar_usuario():
 
 def mostrar_usuarios():
     if not usuarios:
-        print('Nenhum usuário cadastrado.')
+        print('Nenhum usuário cadastrado!')
     else:
         print(f"{' USUÁRIOS CADASTRADOS ':-^40}")
         for i, p in enumerate(usuarios, 1):
