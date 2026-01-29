@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="container min-vh-100 d-flex align-items-center justify-content-center">
+    <div class="row w-100 justify-content-center">
+    <div class="col-md-5">
+        <div class="card cadastro-card">
+            <div class="card-body">
+
+                <h2 class="text-center mb-4">Registrar</h2>
+
+                <form method="POST">
+                    <div class="mb-4">
+                        <label class="form-label">Nome</label>
+                        <input type="text" name="nome" class="form-control" required>
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="form-label">idade</label>
+                        <input type="number" name="idade" class="form-control" required>
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="form-label">Email</label>
+                        <input type="email" name="email" class="form-control" required>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary w-100">
+                        Cadastrar
+                    </button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
